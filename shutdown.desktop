@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Shutdown
+Comment=Istantly shutdown the pc
+Exec=/home/gugu/Programs/Scripts/shutdown.sh
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;

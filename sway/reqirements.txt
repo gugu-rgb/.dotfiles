@@ -1,0 +1,8 @@
+# For this configuration I'm using:
+swayfx # present in AUR
+waybar
+pipewire
+brightnessctl
+foot
+ttf-nerd-fonts-symbols-mono
+fuzzel

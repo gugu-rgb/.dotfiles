@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Reboot
+Comment=Reboot the pc
+Exec=/home/gugu/Programs/Scripts/reboot.sh
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;

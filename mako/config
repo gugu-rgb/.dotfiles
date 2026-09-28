@@ -1,0 +1,9 @@
+default-timeout=20000
+border-radius=20
+anchor=top-center
+margin=10
+text-alignment=center
+background-color=#4c4c4cff
+width=500
+border-size=0
+history=0

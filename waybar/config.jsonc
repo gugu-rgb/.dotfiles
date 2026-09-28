@@ -1,0 +1,51 @@
+// ${XDG_CONFIG_HOME}/waybar/config.jsonc
+{
+    "layer": "top",
+    "position": "top",
+
+// Margins
+    "margin-top": 25,
+    "margin-right": 25,
+    "margin-left": 25,
+
+    "height": 43, // Bar height
+    "spacing": 10, // Spacing between modules
+
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "custom/volume", "custom/brightness",],
+
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false
+    },
+
+    "clock": {
+        "format": "{:%b-%d %H:%M}",
+        "interval": 1
+    },
+
+    "custom/brightness": {
+        "format": "<span font_desc=\"20\">󰃝</span>",
+        "on-click": "brightnessctl set +5%",
+	"on-click-right": "brightnessctl set 5%-",
+	"on-scroll-up": "brightnessctl set +5%",
+	"on-scroll-down": "brightnessctl set 5%-",
+        "tooltip": false
+    },
+
+    "custom/volume": {
+        "format": "<span font_desc=\"20\">󰕾</span>",
+        "on-click": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-click-right": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+	"on-click-middle": "pactl set-sink-volume @DEFAULT_SINK@ 0%",
+        "tooltip": false
+    },
+
+    "battery": {
+    	"format": "{capacity}%",
+	"tooltip": false
+    }
+}

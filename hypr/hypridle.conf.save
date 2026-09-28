@@ -1,0 +1,14 @@
+general {
+    lock_cmd = pidof swaylock || swaylock -f -c 000000 
+}
+
+listener {
+    timeout = 10
+    on-timeout = loginctl lock-session
+}
+
+listener {
+    timeout = 180
+    on-timeout = swaymsg "output * dpms off"
+    on-resume = swaymsg "output * dpms on"
+}

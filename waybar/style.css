@@ -1,0 +1,79 @@
+* {
+    font-family: monospace;
+    font-size: 10pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #e6e6e6;
+}
+
+#workspaces button {
+    min-width: 18px;
+    min-height: 18px;
+    padding: 10;
+    margin: 11px 3px 12px 3px;
+    border-radius: 50%;
+    border: 1px solid #1c1c1c;
+    background-color: #191919;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #888888;
+}
+
+#workspaces button.visible {
+    background-color: #333333;
+    border-color: #333333;
+    color: #cccccc;
+}
+
+#workspaces button.focused {
+    min-width: 24px;
+    min-height: 24px;
+    margin: 9px 3px 10px 3px;
+    background-color: #4c4c4c;
+    border-color: #4c4c4c;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background-color: #2e2e2e;
+    background-image: none;
+    box-shadow: none;
+    border-color: #2e2e2e;
+    color: #bbbbbb;
+}
+
+#workspaces button.visible:hover {
+    background-color: #444444;
+    border-color: #444444;
+    color: #ffffff;
+}
+
+#workspaces button.focused:hover {
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+    color: #ffffff;
+}
+
+#workspaces button.urgent:hover {
+    background-color: #854040;
+    border-color: #854040;
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #703030;
+    border-color: #703030;
+    color: #ffffff;
+}
+
+#clock,
+#custom-brightness,
+#custom-volume,
+#battery {
+    padding: 0 8px;
+    color: #e6e6e6;
+}
