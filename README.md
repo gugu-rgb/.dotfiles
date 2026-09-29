@@ -3,7 +3,8 @@
 Hi!
 Here are the dotfiles of my minimal DE.
 
-## Watch desktop.mp4! https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
+## Watch desktop.mp4!
+https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
 
 ## Features
 
@@ -27,6 +28,12 @@ Here are the dotfiles of my minimal DE.
 - **Audio:** pulseaudio
 - **Brightness:** brightnessctl
 - **Screenshots:** grim
+- **Theme:** darkman
+
+## Other needed things
+- **xdg-desktop-portal**
+- **xdg-desktop-portal-wlr**
+- **pipewire, pipewire-pulse, pipewire-jack, pipewire-alsa, wireplumber**
 
 ## Functions
 
