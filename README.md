@@ -4,7 +4,7 @@ Hi!
 Here are the dotfiles of my minimal DE.
 
 ## Watch desktop.mp4!
-https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
+https://github.com/gugu-rgb/.dotfiles/Github_presentation_files/raw/refs/heads/main/desktop.mp4
 
 ## Features
 
@@ -25,7 +25,6 @@ https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
 - **Login:** tuigreet
 - **Lock screen:** swaylock
 - **Idle:** hypridle
-- **Audio:** pulseaudio
 - **Brightness:** brightnessctl
 - **Screenshots:** grim
 - **Theme:** darkman
@@ -73,3 +72,8 @@ All the configurations can be changed in the config files.
 ## Compatibility
 
 Tested only on Arch Linux.
+
+## Configuration script
+Only if you have red it and you are shure, you can use it with:
+`chmod +x ./setup.sh
+./setup.sh`
