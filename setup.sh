@@ -19,7 +19,7 @@ mkdir -p ~/.locale/share/applications
 mv ./Desktop_files/*.desktop ~/.locale/share/applications
 
 mkdir ~/Programs
-mv -r ./Scripts ~/Programs
+mv ./Scripts ~/Programs
 
 # Removing old config files, backup it!
 rm -rf ~/.config/fastfetch
@@ -35,7 +35,7 @@ rm -rf ~/.config/waybar
 rm -rf ~/.config/yt-dlp
 
 mkdir ~/.config
-mv -r ./.config/* ~/.config
+mv ./.config/* ~/.config
 
 sudo pacman -Syu
 sudo pacman -S --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman

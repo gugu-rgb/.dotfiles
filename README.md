@@ -4,7 +4,7 @@ Hi!
 Here are the dotfiles of my minimal DE.
 
 ## Watch desktop.mp4!
-https://github.com/gugu-rgb/.dotfiles/Github_presentation_files/raw/refs/heads/main/desktop.mp4
+https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
 
 ## Features
 
