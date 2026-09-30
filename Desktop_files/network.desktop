@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Network Manager
+Comment=Gestisci le connessioni di rete
+Exec=/home/gugu/Programs/Scripts/network.sh
+Icon=network-wireless
+Terminal=false
+Categories=Network;System;

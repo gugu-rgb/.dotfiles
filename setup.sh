@@ -38,7 +38,7 @@ mkdir ~/.config
 mv ./.config/* ~/.config
 
 sudo pacman -Syu
-sudo pacman -S --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland
+sudo pacman -S --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland networkmanager nmtui
 paru swayfx
 
 systemctl --user enable --now pipewire
