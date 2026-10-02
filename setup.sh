@@ -34,7 +34,6 @@ rm -rf ~/.config/sway
 rm -rf ~/.config/waybar
 rm -rf ~/.config/yt-dlp
 rm -rf ~/.config/batsignal
-rm -rf ~/.config/mozilla
 
 mkdir ~/.config
 mv ./.config/* ~/.config
