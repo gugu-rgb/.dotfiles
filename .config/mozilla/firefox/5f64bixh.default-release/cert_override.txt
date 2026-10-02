@@ -1,3 +1,0 @@
-# PSM Certificate Override Settings file
-# This is a generated file!  Do not edit.
-pirateiro.com:443:	OID.2.16.840.1.101.3.4.2.1	AF:C5:F2:69:3F:66:B8:8F:54:74:C8:AC:FB:BE:E1:6A:32:E7:1F:82:60:7F:D9:81:44:B9:E3:D1:E0:F8:8D:42	
