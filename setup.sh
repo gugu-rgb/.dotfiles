@@ -33,12 +33,15 @@ rm -rf ~/.config/hypr
 rm -rf ~/.config/sway
 rm -rf ~/.config/waybar
 rm -rf ~/.config/yt-dlp
+rm -rf ~/.config/batsignal
+rm -rf ~/.config/mozilla
 
 mkdir ~/.config
 mv ./.config/* ~/.config
+mv ~/.config/.bashrc ~/
 
-sudo pacman -Syu
-sudo pacman -S --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland networkmanager nmtui
+sudo pacman -Syu --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland networkmanager nmtui batsignal
+
 paru swayfx
 
 systemctl --user enable --now pipewire
@@ -46,6 +49,7 @@ systemctl --user enable --now pipewire-pulse
 systemctl --user enable --now wireplumber
 systemctl --user enable --now xdg-desktop-portal-wlr
 systemctl --user enable --now darkman
+systemctl --user enable --now batsignal
 darkman set dark
 
 cd ~/
