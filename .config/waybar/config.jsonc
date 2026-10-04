@@ -53,7 +53,6 @@
     "format": "<span font_desc=\"20\">{icon}</span>",
     "format-icons": {
         "performance": "󱐌",   // placeholder
-        "balanced": "",      // placeholder
         "power-saver": "󰌪"    // placeholder
     },
     "on-click": "~/.config/waybar/scripts/ppd-switch.sh toggle",
