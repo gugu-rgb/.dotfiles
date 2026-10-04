@@ -22,6 +22,7 @@ mkdir ~/Programs
 mv ./Scripts ~/Programs
 
 # Removing old config files, backup it!
+rm /etc/systemd/logind.conf
 rm -rf ~/.config/fastfetch
 rm -rf ~/.config/fuzzel
 rm -rf ~/.config/mako
@@ -33,13 +34,13 @@ rm -rf ~/.config/hypr
 rm -rf ~/.config/sway
 rm -rf ~/.config/waybar
 rm -rf ~/.config/yt-dlp
-rm -rf ~/.config/batsignal
 
 mkdir ~/.config
 mv ./.config/* ~/.config
 mv ~/.config/.bashrc ~/
+sudo mv ./logind.conf /etc/systemd
 
-sudo pacman -Syu --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland networkmanager nmtui batsignal
+sudo pacman -Syu --noconfirm waybar ttf-nerd-fonts-symbols-mono swaybg mako fuzzel foot firefox greetd tuigreet swaylock hypridle pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-wlr brightnrssctl grim darkman xorg-xwayland networkmanager nmtui batsignal python-curl_cffi power-profiles-daemon
 
 paru swayfx
 
@@ -49,10 +50,10 @@ systemctl --user enable --now wireplumber
 systemctl --user enable --now xdg-desktop-portal-wlr
 systemctl --user enable --now darkman
 systemctl --user enable --now batsignal
+sudo systemctl enable --now power-profiles-daemon
 darkman set dark
 
 cd ~/
 rm -rf ~/temporary_folder_for_dotfiles_setup
 
 echo "Configuration finisced, check that everything is working and change any configurations as needed."
-echo "You can delete this configuration script!"

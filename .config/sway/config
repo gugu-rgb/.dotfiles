@@ -36,6 +36,7 @@
 
 # Notify
 	exec mako
+	exec_always batsignal -b -w 20 -c 7 -d 3 -W "Are you here, Bruce?" -C "I'm dying, Bruce" -p -U "See you, Bruce" -D "systemctl suspend"
 
 ## ESTHETIC
 
@@ -60,7 +61,7 @@ client.background #191919
 
 # Blur
 	blur disable
-	blur_radius 5
+	blur_radius 10
 	blur_passes 2
 
 # Bar

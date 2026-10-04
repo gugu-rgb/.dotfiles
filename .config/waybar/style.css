@@ -73,6 +73,7 @@ window#waybar {
 #clock,
 #custom-brightness,
 #custom-volume,
+#custom-power-profile,
 #battery {
     padding: 0 8px;
     color: #e6e6e6;

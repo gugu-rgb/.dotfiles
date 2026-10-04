@@ -13,7 +13,7 @@
 
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["battery", "custom/volume", "custom/brightness",],
+    "modules-right": ["battery", "custom/power-profile", "custom/volume", "custom/brightness"],
 
     "sway/workspaces": {
         "disable-scroll": false,
@@ -22,6 +22,7 @@
 
     "clock": {
         "format": "{:%b-%d %H:%M}",
+	"tooltip": false,
         "interval": 1
     },
 
@@ -42,6 +43,21 @@
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
 	"on-click-middle": "pactl set-sink-volume @DEFAULT_SINK@ 0%",
         "tooltip": false
+    },
+
+    "custom/power-profile": {
+    "exec": "~/.config/waybar/scripts/ppd-switch.sh",
+    "return-type": "json",
+    "interval": 5,
+    "signal": 8,
+    "format": "<span font_desc=\"20\">{icon}</span>",
+    "format-icons": {
+        "performance": "󱐌",   // placeholder
+        "balanced": "",      // placeholder
+        "power-saver": "󰌪"    // placeholder
+    },
+    "on-click": "~/.config/waybar/scripts/ppd-switch.sh toggle",
+    "tooltip": false
     },
 
     "battery": {

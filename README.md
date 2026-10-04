@@ -33,6 +33,7 @@ https://github.com/gugu-rgb/.dotfiles/raw/refs/heads/main/desktop.mp4
 - **xdg-desktop-portal**
 - **xdg-desktop-portal-wlr**
 - **pipewire, pipewire-pulse, pipewire-jack, pipewire-alsa, wireplumber**
+- **power-profiles-daemon**
 
 ## Functions
 
@@ -74,6 +75,4 @@ All the configurations can be changed in the config files.
 Tested only on Arch Linux.
 
 ## Configuration script
-Only if you have red it and you are shure, you can use it with:
-`chmod +x ./setup.sh
-./setup.sh`
+The configuration script is **not** secure to run, use it only as example for the commands.
