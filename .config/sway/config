@@ -55,14 +55,14 @@ client.background #191919
 	corner_radius 5
 
 # Shadows
-	shadows enable
+	shadows enabled
 	shadow_color #000000
 	shadow_offset 5 5
 
 # Blur
-	blur disable
-	blur_radius 10
-	blur_passes 2
+	blur enabled
+	blur_radius 5
+	blur_passes 1
 
 # Bar
 bar {
